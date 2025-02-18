@@ -4,12 +4,12 @@ namespace App\Controller\Pages;
 use \App\Utils\View;
 use \App\Model\Entity\Organiaztion;
 
-class Home extends Page {
+class About extends Page {
     /**
-     * Método responsável por retornar o conteúdo (view) da nossa home
+     * Método responsável por retornar o conteúdo (view) da nossa pagina de Sobre
      * @return string
      */
-    public static function getHome(){
+    public static function getAbout(){
         
         //ORGANIZAÇÃO
         $objectOrganization = new Organiaztion;
@@ -18,13 +18,14 @@ class Home extends Page {
         echo "</pre>"; exit;*/
 
         //VIEW DA HOME
-        $content = View::render('pages/home',[
+        $content = View::render('pages/about',[
             'name' => $objectOrganization->name,
-            
+            'description' => $objectOrganization->description,
+            'site' => 'Site Oficial:' . $objectOrganization->site
         ]);
 
         //RETORNA A VIEW DA PÁGINA
-        return parent::getPage('HOME > WStenio TI', $content);
+        return parent::getPage('SOBRE > WStenio TI', $content);
     }
 
 }
