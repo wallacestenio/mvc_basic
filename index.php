@@ -5,8 +5,18 @@ require __DIR__ . '/vendor/autoload.php';
 
 use \App\Http\Router;
 use \App\Utils\View;
+use \WallaceStenio\DotEnv\Environment;
 
-define('URL', 'http://localhost/NEW_MVC');
+//Carrega variaveis de ambiente
+Environment::load(__DIR__);
+
+
+/*echo "<pre>";
+print_r(getenv('URL'));
+echo "</pre>";
+exit();*/
+
+define('URL', 'http://localhost:8080');
 
 //Define o valor padrão das variáveis
 View::init([
