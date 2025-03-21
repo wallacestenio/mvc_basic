@@ -16,7 +16,7 @@ print_r(getenv('URL'));
 echo "</pre>";
 exit();*/
 
-define('URL', 'http://localhost:8080');
+define('URL', 'http://localhost:8001');
 
 //Define o valor padrão das variáveis
 View::init([
