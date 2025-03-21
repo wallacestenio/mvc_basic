@@ -8,4 +8,5 @@ Estrutura de mvc criada com finalidade desenvolver de uma forma simples em MVC q
 - Na rais pro projeto digite no terminal: php -S localhost:8000
 - Abra o navegador e digite o endereço: localhost:8000 e é só navegar.
 - Aproveite a esttrutura já criada para desenvolver seus novos projetos.
-- digite seu endereço de host na barra de enredeços do navegador
+- digite seu endereço de host na barra de enredeços do navegador.
+- Espero que essa estrutura lhe ajude a iniciar seus projetos.
